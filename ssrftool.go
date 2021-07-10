@@ -194,6 +194,8 @@ func search_for_links() []string {
         links=append(links, "localhost/admin")
         links=append(links, "169.254.169.254")
         links=append(links, "[::]:22/")
+	links=append(links, "http://7f000001")
+	links=append(links, "http%3A%2F%2F127.0.0.1")
 
 	// Save the JS files.
 	save_to_file(jsFiles, " Saving JS Files for later use", "jsfiles.txt")
